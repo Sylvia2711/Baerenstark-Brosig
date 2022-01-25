@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+}
+
+#navbar {
+  margin-top: 1px;
+  background-color: blue;
+  height: 80px;
+  width: 100%;
+}
+
+#nav {
+  position: fixed;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  width: auto;
+}
+
+a :link {
+  margin: 20px 80px 20px 80px;
+  text-decoration: none;
+  float: right;
+}
+
+a:hover {
+  background-color: crimson;
+  color: blue;
+  text-decoration: none;
+}
+
+.logo {
+  align-items: left;
+  border-width: 2px;
+  border-color: tomato;
+  border-radius: 50%;
+}
