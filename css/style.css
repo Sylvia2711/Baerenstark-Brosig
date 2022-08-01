@@ -71,7 +71,12 @@ body {
   color: #17d64d;
 }
 
+.gruen{
+  background-color: rgba(237, 146, 86, 0.15);
+}
+
   .container {
+    background-color: rgb
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 2fr;  /* fr = fraction  */
