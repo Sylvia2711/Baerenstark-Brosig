@@ -76,7 +76,7 @@ body {
  }
 
   .container {
-    background-color: rgb
+   
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 2fr;  /* fr = fraction  */
