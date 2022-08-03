@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.zone {
+  cursor:  pointer;
+  border-radius: 4px;
+  border:  1px solid #BBB;
+  transition: all 0.3s linear;
+}
+
+.zone:hover {
+  -webkit-box-shadow:  rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -moz-box-shadow:  rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -o-box-shadow:   rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  box-shadow:   rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/* NAV */
+
+.sticky {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 8vh;
+}
+
+.logo {
+  padding: 5px 10px;
+  width: 10%;
+   }
+
+   #contactdaten {
+    list-style: none;
+    justify-content: stretch;
+    align-items: flex-end;
+    }
+  
+  #contactdaten a {
+  color: #ede8e8;
+    font-size: 1.0em;
+    padding: 5px 20px;
+    }
+
+    #contactdaten :hover{
+      color: rgb(55, 7, 107);
+     }
+
+ .main-nav {
+  display: flex;
+  margin: 1% 1%;
+     }
+
+
+@media only screen and (max-width: 600px) {
+  .main-nav {
+    font-size: 0.6em;
+    padding: 0;
+  }
+}
+
+
+.main-nav li {
+  display: inline;
+  }
+
+.main-nav a {
+  padding: 1px 25px;
+  color: #ede8e8;
+  text-decoration: none;
+  font-size: 1.4em;
+ }
+
+ .main-nav :hover{
+  color: rgb(55, 7, 107);
+ }
+
+.push {
+  margin-left: auto;
+  color: #17d64d;
+}
+
+/*   */
+
+  .container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 3fr;  /* fr = fraction  */
+ /*   align-items: flex-start;
+  justify-content: space-around;*/
+  width: 100%;
+  height: 60vh;       /* viewport height */
+ 
+}
+ /* height: 300vh;  */    /* You must set a specified height, here Viewport Height */
+ /*  background-color: rgba(15, 115, 215, 0.8);
+  margin-top: auto;  */
+  /* width: 100%;
+  padding-top: 115px;
+  margin: auto; */
+  /*background-color: rgba(66, 137, 234, 0.3);*/
+  /* background-image: url("../img/storm.jpg");*/ /* The image used */
+  /* Used if the image is unavailable */
+
+  /* background-position: center;  Center the image */
+  /* background-repeat: no-repeat;*/ /* Do not repeat the image */
+  /* background-size: cover;  Resize the background image to cover the entire container */
+  /* background-color: pink;*/
+  /*  border-color: black;
+  border-width: 2px;
+  border-style: dotted;
+  } */
+
+.ueberschrift {
+  justify-content: center;
+  width: 90%;
+  margin: 6% 6%;
+}
+
+.ueberschrift h1 {
+  color: rgb(241, 239, 243);
+  text-align: center;
+ }
+
+
+.bild_baer {
+  margin: -40% 3%;
+  padding: 2% auto;
+     }
+
+.dienstleistungen {
+  margin: 1% 2%;
+  justify-content: left;
+ /* align-items: center; */
+   }
+
+.dienstleistungen ul {
+  list-style-type: disc;
+  letter-spacing: 0.2em;
+}
+
+.dienstleistungen li {
+
+  /* padding: 3% auto; */
+  justify-content: left;
+    }
+
+.dienstleistungen a {
+  color: rgb(241, 239, 243);
+  font-size: 1.8em;
+
+}
+
+.contactbutton {
+  padding: 5% 5%;
+  justify-content: center;
+  margin: -4% 3% auto 3%;
+  align-items: center;
+}
+
+.btn {
+  margin: 1% 10% 1% 10%;
+  width: 90%;
+}
+
+h1 {
+  font-size: 2.8em;
+}
+h2 {
+  font-size: 2.4em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.6em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 0.6em;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  background-size: 100%;
+  height: 15vh;
+}
+
+.fas {
+  margin-right: 8px;
+}
+
+.adressdaten {
+  margin: 0% 7%;
+  justify-content: center;
+  text-align: left;
+
+}
+.adressdaten h5{
+  color: rgb(6, 77, 174);
+}
+
+.contactdaten p{
+  color: rgb(6, 77, 174);
+}
+
+
+.impressum {
+  margin-left: 6%;
+  }
+
+.impressum a{
+  color: rgb(6, 77, 174);
+  margin: 0% 1%;
+  font-size: 0.8em;
+}
+
+
+.bild_baer_impress{
+  margin: 1% 1% 5% 13%;
+  width: 100%;
+}
+
+.unternehmen{
+  display: inline-block;
+  margin: auto -10%;
+  justify-content: left;
+}
+
+.impressum1 {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 25% 70%; /* fr = fraction  */
+  width: 80%;
+  margin: auto 3%;
+  justify-content: center;
+    /* text-align: center; */
+  
+ }
+
+.impressum1 p{
+  /* color: rgb(225, 230, 237);  */
+  font-size: 1em;
+  color: rgb(4, 4, 10);
+}
+
+.impressum1 li{
+ 
+ }
+
+ .impressum1 a{
+  font-size: 1.0em;
+  color: rgb(4, 4, 10);
+}
+
+#belehrung{
+  display: inline-flexbox;
+  margin: 0% 5%;
+  padding: 0% 5%;
+  justify-content: center;
+  }
+#belehrung p{
+  margin: 0% 5%;
+  padding: 0% 10%;
+  font-size: 1em;
+  color: rgb(4, 4, 10);
+}
+
+.schwerpunkte{
+  width: 80%;
+  margin-left: 20%;
+ }
+
+ .schwerpunkte li {
+  color: rgb(241, 239, 243);
+  
+   }
+
+   .schwerpunkte h3{
+    color: rgb(241, 239, 243)
+   }
+
+   .schwerpunkte h4{
+    color: rgb(241, 239, 243);
+   }
+
+.webdesign{
+  margin-left: 3%;
+}
+
+/*  contact.html   */
+
+#landkarte{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 3fr;  /* fr = fraction  */
+ justify-content: center;
+ align-items: center;
+ margin: -5% 5% 0% 5%;
+}
+
+.unternehmen_contact{
+  display: inline-block;
+  margin: auto 2%;
+  justify-content: left;
+}
+
+ .hintergrundbild{
+  background-image: url("/img/architect-g3799ce0b3_1920.jpg");
+  background-repeat: no-repeat;
+   width: 100%;
+   }
+
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+ .blue{
+  background: #7abcff; /* Old browsers */
+  background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+ /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee));  Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+  background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+
+.green-main{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/architect-g3799ce0b3_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ /*   background: #56B870; /* Old browsers */
+  /*  background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956));  Chrome,Safari4+ */
+   /* background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+  /*  background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+  /*  background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+  /*  background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+
+ .green{
+   background: #56B870; /* Old browsers */
+   background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956));  Chrome,Safari4+ */
+   background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+   background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+   background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+   background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404));   Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04));   Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Dark White Background
+ **********************************************************************/
+ .white{
+  background: #ede8e8; /* Old browsers */
+  background: -moz-linear-gradient(top, #f5f1f1 0%, #f7f2ea 100%); /* FF3.6+ */
+ /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04));   Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f5f1f1 0%,#f7f2ea 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ede8e8 0%,#e4f1dc 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ede8e8 0%,#e4f1dc 100%); /* IE10+ */
+  background: linear-gradient(top, #ede8e8 0%,#e4f1dc 100%); /* W3C */
+ }
+/* .box:hover {
+  -webkit-transform:  rotate(-7deg);
+  -moz-transform:  rotate(-7deg);
+  -o-transform:  rotate(-7deg);
+  transform:  rotate(-7deg);
+}  */
+
+/*   
+*/
