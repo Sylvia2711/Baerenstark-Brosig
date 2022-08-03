@@ -147,7 +147,7 @@ body {
 }
 
 .dienstleistungen li {
-
+  color: rgb(241, 239, 243);
   /* padding: 3% auto; */
   justify-content: left;
     }
@@ -256,10 +256,6 @@ h6 {
   color: rgb(4, 4, 10);
 }
 
-.impressum1 li{
- 
- }
-
  .impressum1 a{
   font-size: 1.0em;
   color: rgb(4, 4, 10);
@@ -297,7 +293,7 @@ h6 {
    }
 
 .webdesign{
-  margin-left: 3%;
+  margin-left: -3%;
 }
 
 /*  contact.html   */
@@ -356,6 +352,12 @@ h6 {
 }
 
 
+.green-garten{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/lawn-mower-g2e6da15f6_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /***********************************************************************
  *  Green Background
  **********************************************************************/
