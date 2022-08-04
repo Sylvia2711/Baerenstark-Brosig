@@ -4,22 +4,21 @@
 }
 
 body {
-  margin: 0;
   font-family: Arial;
 }
 
 .zone {
   cursor:  pointer;
-  border-radius: 4px;
+  border-radius: 3px;
   border:  1px solid #BBB;
   transition: all 0.3s linear;
 }
 
 .zone:hover {
-  -webkit-box-shadow:  rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-  -moz-box-shadow:  rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-  -o-box-shadow:   rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-  box-shadow:   rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -webkit-box-shadow:  rgba(0,0,0,0.8) 0px 5px 10px, inset rgba(0,0,0,0.15) 0px -10px 15px;
+  -moz-box-shadow:  rgba(0,0,0,0.8) 0px 5px 10px, inset rgba(0,0,0,0.15) 0px -10px 15px;
+  -o-box-shadow:   rgba(0,0,0,0.8) 0px 5px 10px, inset rgba(0,0,0,0.15) 0px -10px 15px;
+  box-shadow:   rgba(0,0,0,0.8) 0px 5px 10px, inset rgba(0,0,0,0.15) 0px -10px 15px;
 }
 
 /* NAV */
@@ -33,20 +32,20 @@ body {
 }
 
 .logo {
-  padding: 5px 10px;
+  padding: 0.3% 3%;
   width: 10%;
    }
 
    #contactdaten {
-    list-style: none;
-    justify-content: stretch;
-    align-items: flex-end;
+    justify-content: end;
+    align-items: stretch;
+    width: 80%;
     }
   
   #contactdaten a {
-  color: #ede8e8;
-    font-size: 1.0em;
-    padding: 5px 20px;
+  color: rgb(4, 4, 10);
+  font-size: 1.0em;
+  padding: 0% 5%;
     }
 
     #contactdaten :hover{
@@ -54,10 +53,36 @@ body {
      }
 
  .main-nav {
-  display: flex;
-  margin: 1% 1%;
+   width: 100%;
+   margin: 0% 2% 0% 10%;
+  
+      }
+
+     .main-nav li {
+      display: inline;
+      
+      list-style: none;
+      justify-content: end;
+      
+     }
+      
+    
+    .main-nav a {
+      color: #ede8e8;
+      text-decoration: none;
+      font-size: 1.4em;
+      padding-left: 5%;
+     }
+    
+     .main-nav :hover{
+      color: rgb(55, 7, 107);
      }
 
+     .push {
+      margin-left: auto;
+      color: #17d64d;
+    }
+    
 
 @media only screen and (max-width: 600px) {
   .main-nav {
@@ -66,26 +91,6 @@ body {
   }
 }
 
-
-.main-nav li {
-  display: inline;
-  }
-
-.main-nav a {
-  padding: 1px 25px;
-  color: #ede8e8;
-  text-decoration: none;
-  font-size: 1.4em;
- }
-
- .main-nav :hover{
-  color: rgb(55, 7, 107);
- }
-
-.push {
-  margin-left: auto;
-  color: #17d64d;
-}
 
 /*   */
 
@@ -129,6 +134,17 @@ body {
   text-align: center;
  }
 
+ .ueberschrift1 {
+  justify-content: center;
+  width: 90%;
+  margin: 6% 6%;
+}
+
+ .ueberschrift1 h1 {
+  color: rgb(4, 4, 10);
+  text-align: center;
+ }
+
 
 .bild_baer {
   margin: -40% 3%;
@@ -138,8 +154,7 @@ body {
 .dienstleistungen {
   margin: 1% 2%;
   justify-content: left;
- /* align-items: center; */
-   }
+ }
 
 .dienstleistungen ul {
   list-style-type: disc;
@@ -148,7 +163,6 @@ body {
 
 .dienstleistungen li {
   color: rgb(241, 239, 243);
-  /* padding: 3% auto; */
   justify-content: left;
     }
 
@@ -165,10 +179,28 @@ body {
   align-items: center;
 }
 
-.btn {
-  margin: 1% 10% 1% 10%;
-  width: 90%;
+.contactbutton a{
+  font-size: 1.2em;
 }
+
+.btn {
+  margin: 1% 5% 1% 5%;
+  width: 95%;
+ 
+}
+
+.btn a{
+  padding: 0% 2%;
+}
+
+.fas {
+  margin-right: 0.5%;
+}
+
+.fas a{
+  margin: auto 1.5%;
+}
+
 
 h1 {
   font-size: 2.8em;
@@ -198,9 +230,6 @@ h6 {
   height: 15vh;
 }
 
-.fas {
-  margin-right: 8px;
-}
 
 .adressdaten {
   margin: 0% 7%;
@@ -261,17 +290,14 @@ h6 {
   color: rgb(4, 4, 10);
 }
 
-#belehrung{
-  display: inline-flexbox;
-  margin: 0% 5%;
-  padding: 0% 5%;
-  justify-content: center;
+.belehrung{
+  display: block;
+  margin: auto 10%;
   }
-#belehrung p{
-  margin: 0% 5%;
-  padding: 0% 10%;
-  font-size: 1em;
+
+.belehrung p{
   color: rgb(4, 4, 10);
+  text-align: justify;
 }
 
 .schwerpunkte{
@@ -293,8 +319,12 @@ h6 {
    }
 
 .webdesign{
-  margin-left: -3%;
+  margin-left: auto;
+  }
+.webdesign p{
+  padding-right: 10%;
 }
+
 
 /*  contact.html   */
 
@@ -403,20 +433,12 @@ h6 {
  *  Dark White Background
  **********************************************************************/
  .white{
-  background: #ede8e8; /* Old browsers */
-  background: -moz-linear-gradient(top, #f5f1f1 0%, #f7f2ea 100%); /* FF3.6+ */
+  background: #dbd9d9; /* Old browsers */
+  background: -moz-linear-gradient(top, #dbd9d9 0%, #929191 100%); /* FF3.6+ */
  /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04));   Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f5f1f1 0%,#f7f2ea 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #ede8e8 0%,#e4f1dc 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #ede8e8 0%,#e4f1dc 100%); /* IE10+ */
-  background: linear-gradient(top, #ede8e8 0%,#e4f1dc 100%); /* W3C */
- }
-/* .box:hover {
-  -webkit-transform:  rotate(-7deg);
-  -moz-transform:  rotate(-7deg);
-  -o-transform:  rotate(-7deg);
-  transform:  rotate(-7deg);
-}  */
+  background: -webkit-linear-gradient(top, #dbd9d9 0%,#929191 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #dbd9d9 0%,#929191 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #dbd9d9 0%,#929191 100%); /* IE10+ */
+  background: linear-gradient(top, #dbd9d9 0%,#929191 100%); /* W3C */
+   }
 
-/*   
-*/
