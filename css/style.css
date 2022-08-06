@@ -21,6 +21,25 @@ body {
   box-shadow:   rgba(0,0,0,0.8) 0px 5px 10px, inset rgba(0,0,0,0.15) 0px -10px 15px;
 }
 
+h1 {
+  font-size: 2.8em;
+}
+h2 {
+  font-size: 2.4em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.6em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 0.6em;
+}
+
 /* NAV */
 
 .sticky {
@@ -202,24 +221,7 @@ body {
 }
 
 
-h1 {
-  font-size: 2.8em;
-}
-h2 {
-  font-size: 2.4em;
-}
-h3 {
-  font-size: 2em;
-}
-h4 {
-  font-size: 1.6em;
-}
-h5 {
-  font-size: 1.2em;
-}
-h6 {
-  font-size: 0.6em;
-}
+
 
 
 .footer {
